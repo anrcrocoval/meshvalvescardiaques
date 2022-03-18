@@ -16,7 +16,7 @@ import csv
 def conversion(nomSansExtension):
     fileCsv = open(nomSansExtension + '.csv')
     csvreader = csv.reader(fileCsv)    
-    fileTxt = open(nomSansExtension + 'SansTabulation.txt', 'w') 
+    fileTxt = open(nomSansExtension + 'SansTabulation.csv', 'w') 
     
     for row in csvreader:
         if row != []: # dernière ligne est vide
